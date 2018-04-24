@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Torsia</title>
+		<meta name="description" content="torsia: Is a web app for documenting torsion Experiment" />
+		<meta name="keywords" content="Torsion, Experiment, Solid Mechanics, Qatar University" />
+		<meta name="author" content="Mohamed Radwan" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<span>Torsia <span class="bp-icon bp-icon-about" data-content="Torsia is a web application for presenting the scientific  torsion experiment in a creative way"></span></span>
+				<h1>Torsion Experiment App</h1>
+			</header>	
+			<div id="tabs" class="tabs">
+				<nav>
+					<ul>
+						<li><a href="#section-1" class="icon-shop"><span>Theory</span></a></li>
+						<li><a href="#section-2" class="icon-cup"><span>Assumptions</span></a></li>
+						<li><a href="#section-3" class="icon-food"><span>Results</span></a></li>
+						<li><a href="#section-4" class="icon-lab"><span>Visualization</span></a></li>
+					</ul>
+				</nav>
+				<div class="content">
+					<section id="section-1">
+						<div class="mediabox">
+							<img src="img/01.jpg" alt="img01" />
+							<h3>Torque Cause Torsion</h3>
+							<p>Torque applied to a shaft which is fixed from an end and free from another, cause torsion stress inside the shaft.</p>
+						</div>
+						<div class="mediabox">
+							<img src="img/2.png" alt="img02" />
+							<h3>Torsion Cause Twist</h3>
+							<p>Shafts twists in the presence of torsion. The Angle of Twist is a measure for twist happened due to torque.</p>
+						</div>
+						<div class="mediabox">
+							<img src="img/3.png" alt="img03" />
+							<h3>Torsion Cause Shear stress</h3>
+							<p>The presence of torsion generates a distributed shear stress all over the cross-sectional area.</p>
+						</div>
+					</section>
+					<section id="section-2">
+						<left>
+							<h2>Experimental Assumptions</h2>
+							<ul>
+							  <li>Material is uniform throughout the shaft.</li>
+							  <li>Diameter of the cylinder stays the same after deformation.</li>
+							  <li>Cross-section of the shaft, which are plane before twist remain plane after twist.</li>
+							  <li>The twist along the shaft is uniform.</li>
+							</ul>
+						</left>  
+					</section>
+					<section id="section-3">
+							<!DOCTYPE html>
+							<html>
+							<head>
+							<style>
+							table {
+								font-family: arial, sans-serif;
+								border-collapse: collapse;
+								width: 100%;
+							}
+							
+							td, th {
+								border: 1px solid #dddddd;
+								text-align: left;
+								padding: 8px;
+							}
+							
+							tr:nth-child(even) {
+								background-color: #dddddd;
+							}
+							</style>
+							</head>
+							<body>
+							
+							<h2>Results Summary Table</h2>
+							<div style="overflow-x:auto;">
+							<table>
+							  <tr>
+								<th>Force(N)</th>
+								<th>Theoritical Shear Stress (MPA)</th>
+								<th>Solidworks Stress (MPA)</th>
+								<th>Error in Stress%</th>
+								<th>Theoritical Factor of Safety</th>
+								<th>Solidworks factor of safety</th>
+								<th>error in factor of safety%</th>
+								<th>angle of twist</th>
+								<th>Experimental Angle of twist</th>
+								<th>Angle of twist error%</th>
+							  </tr>
+							  <tr>
+								<td>1</td>
+								<td>0.509295818</td>
+								<td>0.51373</td>
+								<td>-0.870649634</td>
+								<td>284.7068343</td>
+								<td>202.290543</td>
+								<td>28.94777411</td>
+								<td>0.000171887</td>
+								<td>0.000108</td>
+								<td>37.16814692</td>
+							  </tr>
+							  <tr>
+								<td>2</td>
+								<td>1.018591636</td>
+								<td>1.0275</td>
+								<td>-0.874576625</td>
+								<td>142.3534171</td>
+								<td>101.145271</td>
+								<td>28.94777446</td>
+								<td>0.000343775</td>
+								<td>0.000189</td>
+								<td>45.02212856</td>
+							  </tr>
+							  <tr>
+								<td>3</td>
+								<td>1.527887453</td>
+								<td>1.5412</td>
+								<td>-0.871304132</td>
+								<td>94.90227809</td>
+								<td>67.430176</td>
+								<td>28.94777938</td>
+								<td>0.000515662</td>
+								<td>0.000297</td>
+								<td>42.40413468</td>
+							  </tr>
+							  <tr>
+								<td>4</td>
+								<td>2.037183271</td>
+								<td>2.0549</td>
+								<td>-0.869667886</td>
+								<td>71.17670857</td>
+								<td>50.572636</td>
+								<td>28.94777376</td>
+								<td>0.000687549</td>
+								<td>0.000405</td>
+								<td>41.09513774</td>
+							  </tr>
+							  <tr>
+								<td>5</td>
+								<td>2.546479089</td>
+								<td>2.5686</td>
+								<td>-0.868686138</td>
+								<td>56.94136685</td>
+								<td>40.458107</td>
+								<td>28.94777692</td>
+								<td>0.000859437</td>
+								<td>0.000513</td>
+								<td>40.30973957</td>
+							  </tr>
+							  <tr>
+								<td>6</td>
+								<td>3.055774907</td>
+								<td>3.0824</td>
+								<td>-0.871304132</td>
+								<td>47.45113904</td>
+								<td>33.715088</td>
+								<td>28.94777938</td>
+								<td>0.001031324</td>
+								<td>0.000594</td>
+								<td>42.40413468</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>3.565070725</td>
+									<td>3.5961</td>
+									<td>-0.870369134</td>
+									<td>40.6724049</td>
+									<td>28.898647</td>
+									<td>28.94777938</td>
+									<td>0.001203211</td>
+									<td>0.000702</td>
+									<td>41.65613643</td>
+									</tr>
+									<tr>
+										<td>8</td>
+										<td>4.074366543</td>
+										<td>4.1098</td>
+										<td>-0.869667886</td>
+										<td>35.58835428</td>
+										<td>25.286318</td>
+										<td>28.94777376</td>
+										<td>0.001375099</td>
+										<td>0.00081</td>
+										<td>41.09513774</td>
+										</tr>
+										<tr>
+											<td>9</td>
+											<td>4.58366236</td>
+											<td>4.6236</td>
+											<td>-0.871304132</td>
+											<td>31.6340927</td>
+											<td>22.476727</td>
+											<td>28.94777411</td>
+											<td>0.001546986</td>
+											<td>0.000891</td>
+											<td>42.40413468</td>
+											</tr>
+											<tr>
+												<td>10</td>
+												<td>5.092958178</td>
+												<td>5.1373</td>
+												<td>-0.870649634</td>
+												<td>28.47068343</td>
+												<td>20.229053</td>
+												<td>28.94777868</td>
+												<td>0.001718873</td>
+												<td>0.000999</td>
+												<td>41.8805359</td>
+												</tr>
+												<tr>
+													<td>11</td>
+													<td>5.602253996</td>
+													<td>5.651</td>
+													<td>-0.870114135</td>
+													<td>25.88243948</td>
+													<td>18.390049</td>
+													<td>28.94777552</td>
+													<td>0.001890761</td>
+													<td>0.001107</td>
+													<td>41.4521369</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>6.111549814</td>
+														<td>6.1647</td>
+														<td>-0.869667886</td>
+														<td>23.72556952</td>
+														<td>16.857544</td>
+														<td>28.94777938</td>
+														<td>0.002062648</td>
+														<td>0.001188</td>
+														<td>42.40413468</td>
+													</tr>
+													<tr>
+														<td>12</td>
+														<td>6.111549814</td>
+														<td>6.1647</td>
+														<td>-0.869667886</td>
+														<td>23.72556952</td>
+														<td>16.857544</td>
+														<td>28.94777938</td>
+														<td>0.002062648</td>
+														<td>0.001188</td>
+														<td>42.40413468</td>
+													</tr>
+													<tr>
+														<td>13</td>
+														<td>6.620845632</td>
+														<td>6.6785</td>
+														<td>-0.870800672</td>
+														<td>21.90052571</td>
+														<td>15.560811</td>
+														<td>28.94777411</td>
+														<td>0.002234535</td>
+														<td>0.001296</td>
+														<td>42.00136639</td>
+													</tr>
+													<tr>
+														<td>14</td>
+														<td>7.13014145</td>
+														<td>7.1922</td>
+														<td>-0.870369134</td>
+														<td>20.33620245</td>
+														<td>14.449324</td>
+														<td>28.94777657</td>
+														<td>0.002406423</td>
+														<td>0.001404</td>
+														<td>41.65613643</td>
+													</tr>
+													<tr>
+														<td>15</td>
+														<td>7.639437267</td>
+														<td>7.7059</td>
+														<td>-0.869995135</td>
+														<td>18.98045562</td>
+														<td>13.486035</td>
+														<td>28.94778044</td>
+														<td>0.00257831</td>
+														<td>0.001512</td>
+														<td>41.35693713</td>
+													</tr>
+													<tr>
+														<td>16</td>
+														<td>8.148733085</td>
+														<td>78.2197</td>
+														<td>-0.870895071</td>
+														<td>17.79417714</td>
+														<td>12.643159</td>
+														<td>28.94777376</td>
+														<td>0.002750197</td>
+														<td>0.001593</td>
+														<td>42.07688544</td>
+													</tr>
+													<tr>
+														<td>17</td>
+														<td>8.658028903</td>
+														<td>8.7334</td>
+														<td>-0.870534134</td>
+														<td>16.74746084</td>
+														<td>11.899443</td>
+														<td>28.94777833</td>
+														<td>0.002922085</td>
+														<td>0.001701</td>
+														<td>41.78813612</td>
+													</tr>
+													<tr>
+														<td>18</td>
+														<td>9.167324721</td>
+														<td>9.2471</td>
+														<td>-0.870213301</td>
+														<td>15.81704635</td>
+														<td>11.238363</td>
+														<td>28.94777727</td>
+														<td>0.003093972</td>
+														<td>0.001809</td>
+														<td>41.53147005</td>
+													</tr>
+													<tr>
+														<td>19</td>
+														<td>9.676620539</td>
+														<td>9.7608</td>
+														<td>-0.869926241</td>
+														<td>14.98457022</td>
+														<td>10.64687</td>
+														<td>28.94777868</td>
+														<td>0.003265859</td>
+														<td>0.00189</td>
+														<td>42.12855637</td>
+													</tr>
+													<tr>
+														<td>20</td>
+														<td>10.18591636</td>
+														<td>10.275</td>
+														<td>-0.874576625</td>
+														<td>14.23534171</td>
+														<td>10.114527</td>
+														<td>28.94777517</td>
+														<td>0.003437747</td>
+														<td>0.001998</td>
+														<td>41.8805359</td>
+													</tr>
+							</table>
+						</div>
+							</body>
+							</html>
+					</section>
+					<section id="section-4">
+						<h3>3D interactive model: Visualize the experiment..</h3>
+						<div class="mediabox">
+							<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/6f15440427a8450db30d6d2475a87395/embed" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel=""></iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/models/6f15440427a8450db30d6d2475a87395?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Torsion Experiment</a> by <a href="https://sketchfab.com/m.medhat_180?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">m.medhat_180</a> on <a href="https://sketchfab.com?utm_medium=embed&utm_source=website&utm_campain=share-popup" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a> </p> </div>						</div>
+						</div>
+					</section>
+				</div><!-- /content -->
+			</div><!-- /tabs -->
+			<center>
+					<footer>
+						<small>&copy; Copyright 2018, Mohamed Medhat Radwan</small>
+					</footer>
+				</center>
+		</div>
+		<script src="js/cbpFWTabs.js"></script>
+		<script>
+			new CBPFWTabs( document.getElementById( 'tabs' ) );
+		</script>
+	</body>
+</html>
