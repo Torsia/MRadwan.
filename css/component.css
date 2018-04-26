@@ -19,6 +19,8 @@
 
 /* Nav */
 .tabs nav {
+	overflow: auto;
+  -webkit-overflow-scrolling: touch;
 	text-align: center;
 }
 
